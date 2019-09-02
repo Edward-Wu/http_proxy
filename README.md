@@ -15,10 +15,9 @@ $ sudo ./http_proxy
 #config on client
 
 1.in hosts file (/etc/hosts), add any domainname that you can't access because of net limit or check(you know why) to map to 
+local ip (127.0.0.1), such as :
 
 $ vi /etc/hosts
-
-local ip (127.0.0.1), such as :
 
 127.0.0.1 www.google.com
 
