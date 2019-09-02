@@ -33,6 +33,7 @@ if you get the response content of www.google.com , congradulation!
 
 
 #issue
+
 1.on mac, you can use safari browser not chrome browser, I will analyse why chrome browser can't work well in future.
 
 
