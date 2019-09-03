@@ -37,6 +37,6 @@ if you get the response content of www.google.com , congradulation! If not pleas
 
 #issue
 
-1.on mac, you can use safari browser not chrome browser, I will analyse why chrome browser can't work well in future.
+1.on mac, I suggest use safari browser,if you use chrome browser please disabe the 'open proxy settings' in setting->advanced->system item.
 
 
