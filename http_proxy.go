@@ -183,11 +183,19 @@ func getHostNameFromHttpsClientInfo(buf []byte) (string) {
     i := 0
     clientHttps.helloType = buf[i]
     i += 1
+    if  clientHttps.helloType != 22 {
+        fmt.Printf("wrong helloType=%d, expect 22.", clientHttps.helloType)
+        return "";
+    }
  
     clientHttps.vers[0] = buf[i]
     clientHttps.vers[1] = buf[i+1]
     i += 2
     fmt.Printf("vers=%v\n", clientHttps.vers)
+    if  clientHttps.helloType != 22 {
+        fmt.Printf("wrong vers=%v, expect 3 1.", clientHttps.vers)
+        return "";
+    }
 
     clientHttps.cententLen = (uint16)(byte2Int(buf[i:i+2]))
     i += 3 
