@@ -192,7 +192,7 @@ func getHostNameFromHttpsClientInfo(buf []byte) (string) {
     clientHttps.vers[1] = buf[i+1]
     i += 2
     fmt.Printf("vers=%v\n", clientHttps.vers)
-    if  clientHttps.helloType != 22 {
+    if  clientHttps.vers[0] != 3 || clientHttps.vers[1] != 1 {
         fmt.Printf("wrong vers=%v, expect 3 1.", clientHttps.vers)
         return "";
     }
